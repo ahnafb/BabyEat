@@ -251,12 +251,12 @@
         }
 
         $(".buttonl").click(function () {
-          currentCardIndex = (currentCardIndex - 2 + totalCards) % totalCards;
+          currentCardIndex = (currentCardIndex - 1 + totalCards) % totalCards;
           showCard(currentCardIndex);
         });
 
         $(".buttonr").click(function () {
-          currentCardIndex = (currentCardIndex + 2) % totalCards;
+          currentCardIndex = (currentCardIndex + 1) % totalCards;
           showCard(currentCardIndex);
         });
       });
